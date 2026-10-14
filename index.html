@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shreyansh Bhardwaj — Computer Science Engineering Student</title>
+<meta name="author" content="Shreyansh Bhardwaj">
+<meta name="description" content="Shreyansh Bhardwaj, Computer Science Engineering Student. An ambitious CSE student at JECRC University, exploring programming, web development, and creative technology.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shreyansh Bhardwaj — Computer Science Engineering Student">
+<meta property="og:description" content="Building Ideas Into Digital Experiences. An ambitious CSE student at JECRC University, exploring programming, web development, and creative technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2ff;--o1:#c7d2fe;--o2:#fbcfe8;--o3:#bae6fd;--glass:rgba(255,255,255,.55);--edge:rgba(255,255,255,.9);--ink:#1e293b;--mute:#475569;--acc:#6366f1;--shadow:0 8px 30px rgba(30,41,59,.08);--orb:.85}
+[data-theme=dark]{--bg:#0b1020;--o1:#3730a3;--o2:#86198f;--o3:#075985;--glass:rgba(255,255,255,.07);--edge:rgba(255,255,255,.16);--ink:#e2e8f0;--mute:#94a3b8;--acc:#a5b4fc;--shadow:none;--orb:.5}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:300;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.orb{position:fixed;z-index:-1;border-radius:50%;filter:blur(70px);opacity:var(--orb);animation:drift 28s ease-in-out infinite alternate}
+.o1{width:420px;height:420px;background:var(--o1);top:-100px;left:-100px}
+.o2{width:380px;height:380px;background:var(--o2);top:35%;right:-120px;animation-delay:-9s}
+.o3{width:360px;height:360px;background:var(--o3);bottom:-100px;left:15%;animation-delay:-17s}
+@keyframes drift{to{transform:translate(60px,40px)}}
+.g{background:var(--glass);border:1px solid var(--edge);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:20px;box-shadow:var(--shadow)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);width:calc(100% - 28px);max-width:720px;z-index:10;display:flex;align-items:center;gap:12px;padding:8px 10px 8px 18px;border-radius:999px}
+nav .logo{font-weight:500;text-decoration:none}
+nav .links{display:flex;gap:16px;flex:1;justify-content:center;overflow-x:auto;font-size:13px;scrollbar-width:none}
+nav .links a{text-decoration:none;color:var(--mute);white-space:nowrap;padding:2px 0;border-bottom:2px solid transparent}
+nav .links a[aria-current=true]{color:var(--ink);border-color:var(--acc)}
+.tog{border:1px solid var(--edge);background:var(--glass);color:var(--ink);border-radius:999px;width:34px;height:34px;cursor:pointer;font-size:15px}
+section{padding:90px 0;scroll-margin-top:60px}
+h2{font-size:clamp(28px,4.5vw,40px);font-weight:300;letter-spacing:-.02em;margin-bottom:28px}
+h3{font-size:16px;font-weight:500;margin-bottom:8px}
+.kicker{font-size:14px;color:var(--acc);font-weight:500;margin-bottom:10px;display:block}
+p{color:var(--mute)}
+#top{min-height:100svh;display:flex;align-items:center;position:relative;padding:110px 0 60px}
+.hero{position:relative;z-index:1;max-width:620px}
+h1{font-size:clamp(40px,8vw,76px);font-weight:300;letter-spacing:-.03em;line-height:1.05;margin:6px 0 20px}
+.role{font-size:clamp(18px,2.6vw,24px);color:var(--ink);min-height:1.6em}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--acc);vertical-align:-3px;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.tag{font-size:17px;margin:14px 0 8px;color:var(--ink)}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;font:inherit;font-size:14px;font-weight:500;border-radius:999px;padding:12px 22px;cursor:pointer;border:1px solid var(--edge)}
+.btn.p{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.s{background:var(--glass);color:var(--ink);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.sphere{position:absolute;right:4%;top:50%;width:min(300px,52vw);aspect-ratio:1;margin-top:-150px;border-radius:50%;border:1.5px solid var(--edge);background:radial-gradient(circle at 30% 26%,rgba(255,255,255,.95) 0 5%,rgba(255,255,255,.3) 6% 38%,rgba(165,180,252,.5) 72%,rgba(251,207,232,.5));animation:float 9s ease-in-out infinite alternate;opacity:.9}
+@keyframes float{to{translate:0 -18px}}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{padding:24px}
+.wide{grid-column:1/-1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.chip{font-size:13px;padding:5px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--edge);color:var(--ink)}
+.chip.dash{border-style:dashed;border-color:var(--acc)}
+.count{font-size:44px;font-weight:300;line-height:1;color:var(--acc)}
+.count small{display:block;font-size:13px;color:var(--mute);margin:4px 0 16px}
+.proj{padding:22px;display:flex;flex-direction:column;gap:8px;min-height:150px;transition:transform .25s}
+.proj:hover{transform:translateY(-4px)}
+.badge{align-self:flex-start;font-size:12px;font-weight:500;padding:3px 12px;border-radius:999px;border:1px solid var(--acc);color:var(--acc)}
+.badge.ip{border-color:#db2777;color:#db2777}
+[data-theme=dark] .badge.ip{border-color:#f9a8d4;color:#f9a8d4}
+.badge.cs{border-style:dashed;border-color:var(--mute);color:var(--mute)}
+.steps{list-style:none;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.steps li{padding:20px}
+.steps span{display:block;font-size:13px;color:var(--acc);font-weight:500;margin-bottom:4px}
+form{display:grid;gap:12px}
+label{font-size:13px;color:var(--mute);display:grid;gap:6px}
+input,textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--glass);border:1px solid var(--edge);border-radius:14px;padding:12px 14px;width:100%}
+textarea{min-height:120px;resize:vertical}
+.info{display:grid;gap:18px;align-content:start}
+.info a{color:var(--acc);text-underline-offset:3px;word-break:break-all}
+.soc{display:flex;gap:10px;flex-wrap:wrap}
+footer{padding:30px 0 50px;font-size:14px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:640px){.sphere{opacity:.35;right:-60px}section{padding:70px 0}nav{padding-left:14px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+
+<nav class="g" aria-label="Main">
+<a class="logo" href="#top">SB</a>
+<div class="links">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#roadmap">Roadmap</a><a href="#contact">Contact</a>
+</div>
+<button class="tog" id="tog" aria-label="Switch between light and dark mode">☾</button>
+</nav>
+
+<main>
+<section id="top">
+<div class="sphere" id="sphere" aria-hidden="true"></div>
+<div class="wrap"><div class="hero">
+<span class="kicker">Computer Science Engineering Student</span>
+<h1>Shreyansh Bhardwaj</h1>
+<p class="role">I'm a <span id="type"></span><span class="caret" aria-hidden="true"></span></p>
+<p class="tag">“Building Ideas Into Digital Experiences”</p>
+<p>An ambitious CSE student at JECRC University, exploring programming, web development, and creative technology.</p>
+<div class="btns"><a class="btn p" href="#projects">View Projects</a><a class="btn s" href="#contact">Contact Me</a></div>
+</div></div>
+</section>
+
+<section id="about"><div class="wrap">
+<h2>A little about me</h2>
+<div class="grid">
+<div class="g card wide"><h3>Bio</h3><p>An ambitious CSE student at JECRC University, exploring programming, web development, and creative technology.</p></div>
+<div class="g card"><h3>Education</h3><p>BTech in Computer Science Engineering, JECRC University, Jaipur</p></div>
+<div class="g card"><h3>Location</h3><p>Jaipur, Rajasthan, India</p></div>
+<div class="g card"><h3>Interests</h3><ul class="chips"><li class="chip">Technology</li><li class="chip">Coding</li><li class="chip">Learning new skills</li></ul></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2>What I work with</h2>
+<div class="grid">
+<div class="g card"><div class="count"><span data-to="4">4</span><small>Current skills</small></div>
+<ul class="chips"><li class="chip">C Programming</li><li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li></ul></div>
+<div class="g card"><div class="count"><span data-to="7">7</span><small>Learning now</small></div>
+<ul class="chips"><li class="chip dash">React</li><li class="chip dash">Git &amp; GitHub</li><li class="chip dash">Python</li><li class="chip dash">Data Structures &amp; Algorithms</li><li class="chip dash">Tailwind CSS</li><li class="chip dash">Responsive Design</li><li class="chip dash">Problem Solving</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Things I'm building</h2>
+<div class="grid">
+<article class="g proj"><span class="badge">Concept / Presentation</span><h3>CodeQuest</h3><p>Game-Based Learning</p><p>A game-based learning concept.</p></article>
+<article class="g proj"><span class="badge ip">In Progress</span><h3>Personal Portfolio Website</h3></article>
+<article class="g proj"><span class="badge cs">Coming Soon</span><h3>To-Do List App</h3></article>
+<article class="g proj"><span class="badge cs">Coming Soon</span><h3>Weather App</h3></article>
+<article class="g proj"><span class="badge cs">Coming Soon</span><h3>Quiz App</h3></article>
+<article class="g proj"><span class="badge cs">Coming Soon</span><h3>Calculator</h3></article>
+</div></div></section>
+
+<section id="roadmap"><div class="wrap">
+<h2>What I'm learning next</h2>
+<ol class="steps">
+<li class="g"><span>Step 01</span>Git &amp; GitHub</li>
+<li class="g"><span>Step 02</span>React</li>
+<li class="g"><span>Step 03</span>Tailwind CSS &amp; Responsive Design</li>
+<li class="g"><span>Step 04</span>Python</li>
+<li class="g"><span>Step 05</span>Data Structures &amp; Algorithms</li>
+</ol></div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education</h2>
+<div class="g card"><h3>BTech in Computer Science Engineering</h3><p>JECRC University, Jaipur</p></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Let's talk</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+<form class="g card" id="form">
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="message" required></textarea></label>
+<button class="btn p" type="submit">Send via email app</button>
+</form>
+<div class="g card info">
+<div><h3>Email</h3><a href="mailto:shreyansh.26bcon2445@jecrcu.edu.in">shreyansh.26bcon2445@jecrcu.edu.in</a></div>
+<div><h3>Location</h3><p>Jaipur, Rajasthan, India</p></div>
+<div class="soc"><a class="btn s" href="https://github.com/shreyansh26bcon2445" target="_blank" rel="noopener">GitHub</a><a class="btn s" href="https://www.linkedin.com/in/shreyansh-bhardwaj-6600b9374" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><span>© Shreyansh Bhardwaj</span><a href="#top">Back to top</a></div></footer>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const root=document.documentElement,tog=document.getElementById('tog');
+let saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
+function setTheme(t){root.dataset.theme=t;tog.textContent=t==='dark'?'☀':'☾'}
+setTheme(saved||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));
+tog.onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';setTheme(t);try{localStorage.setItem('theme',t)}catch(e){}};
+
+const roles=['CSE student','web development learner','creative technology explorer'],el=document.getElementById('type');
+if(reduce){el.textContent=roles[0]}else{let r=0,i=0,del=false;(function tick(){const w=roles[r];i+=del?-1:1;el.textContent=w.slice(0,i);let d=del?35:70;if(!del&&i===w.length){del=true;d=1400}else if(del&&i===0){del=false;r=(r+1)%roles.length;d=300}setTimeout(tick,d)})()}
+
+const links=[...document.querySelectorAll('.links a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+e.target.id))}),{threshold:.45});
+document.querySelectorAll('main section').forEach(s=>io.observe(s));
+
+if(!reduce){document.querySelectorAll('[data-to]').forEach(n=>{const to=+n.dataset.to;n.textContent=0;new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){o.disconnect();let v=0;const t=setInterval(()=>{n.textContent=++v;if(v>=to)clearInterval(t)},120)}}).observe(n)})}
+
+const sp=document.getElementById('sphere');
+if(!reduce&&matchMedia('(hover:hover)').matches){addEventListener('mousemove',e=>{const x=(e.clientX/innerWidth-.5)*24,y=(e.clientY/innerHeight-.5)*24;sp.style.transform=`translate(${x}px,${y}px)`})}
+
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);
+const s=encodeURIComponent('Portfolio message from '+f.get('name'));
+const b=encodeURIComponent(f.get('message')+'\n\n— '+f.get('name')+' ('+f.get('email')+')');
+location.href='mailto:shreyansh.26bcon2445@jecrcu.edu.in?subject='+s+'&body='+b});
+</script>
+</body>
+</html>
